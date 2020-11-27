@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6316E83D256FE93900D7F686 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E83C256FE93900D7F686 /* AppDelegate.m */; };
+		6316E848256FE93A00D7F686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6316E847256FE93A00D7F686 /* Assets.xcassets */; };
+		6316E84B256FE93A00D7F686 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6316E849256FE93A00D7F686 /* LaunchScreen.storyboard */; };
+		6316E84E256FE93A00D7F686 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E84D256FE93A00D7F686 /* main.m */; };
+		6316E858256FE93B00D7F686 /* VHSliderTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E857256FE93B00D7F686 /* VHSliderTableViewTests.m */; };
+		6316E863256FE93B00D7F686 /* VHSliderTableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E862256FE93B00D7F686 /* VHSliderTableViewUITests.m */; };
+		6316E88B256FEE3F00D7F686 /* SiteChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E888256FEE3F00D7F686 /* SiteChooseViewController.m */; };
+		6316E892256FEE9100D7F686 /* SiteSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E890256FEE9100D7F686 /* SiteSingle.m */; };
+		6316E89D256FF06100D7F686 /* SiteCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E89C256FF06100D7F686 /* SiteCollectionViewCell.m */; };
+		6316E8A4256FF09D00D7F686 /* SelectedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E8A2256FF09D00D7F686 /* SelectedCollectionViewCell.m */; };
+		6316E8A5256FF09D00D7F686 /* SelectedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6316E8A3256FF09D00D7F686 /* SelectedCollectionViewCell.xib */; };
+		6316E8C0256FF3A000D7F686 /* SiteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E8BE256FF3A000D7F686 /* SiteTableViewCell.m */; };
+		6316E8C1256FF3A000D7F686 /* SiteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6316E8BF256FF3A000D7F686 /* SiteTableViewCell.xib */; };
+		6316E8CA2570DB2E00D7F686 /* content.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 6316E8C92570DB2E00D7F686 /* content.geojson */; };
+		6316E8DB2571553F00D7F686 /* SiteChooseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6316E8DA2571553F00D7F686 /* SiteChooseViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6316E854256FE93B00D7F686 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6316E830256FE93900D7F686 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6316E837256FE93900D7F686;
+			remoteInfo = VHSliderTableView;
+		};
+		6316E85F256FE93B00D7F686 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6316E830256FE93900D7F686 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6316E837256FE93900D7F686;
+			remoteInfo = VHSliderTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6316E838256FE93900D7F686 /* VHSliderTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VHSliderTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6316E83B256FE93900D7F686 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6316E83C256FE93900D7F686 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6316E847256FE93A00D7F686 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6316E84A256FE93A00D7F686 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6316E84C256FE93A00D7F686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6316E84D256FE93A00D7F686 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6316E853256FE93B00D7F686 /* VHSliderTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VHSliderTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6316E857256FE93B00D7F686 /* VHSliderTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VHSliderTableViewTests.m; sourceTree = "<group>"; };
+		6316E859256FE93B00D7F686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6316E85E256FE93B00D7F686 /* VHSliderTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VHSliderTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6316E862256FE93B00D7F686 /* VHSliderTableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VHSliderTableViewUITests.m; sourceTree = "<group>"; };
+		6316E864256FE93B00D7F686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6316E888256FEE3F00D7F686 /* SiteChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteChooseViewController.m; sourceTree = "<group>"; };
+		6316E889256FEE3F00D7F686 /* SiteChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteChooseViewController.h; sourceTree = "<group>"; };
+		6316E890256FEE9100D7F686 /* SiteSingle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteSingle.m; sourceTree = "<group>"; };
+		6316E891256FEE9100D7F686 /* SiteSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteSingle.h; sourceTree = "<group>"; };
+		6316E89B256FF06100D7F686 /* SiteCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteCollectionViewCell.h; sourceTree = "<group>"; };
+		6316E89C256FF06100D7F686 /* SiteCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteCollectionViewCell.m; sourceTree = "<group>"; };
+		6316E8A1256FF09D00D7F686 /* SelectedCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedCollectionViewCell.h; sourceTree = "<group>"; };
+		6316E8A2256FF09D00D7F686 /* SelectedCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedCollectionViewCell.m; sourceTree = "<group>"; };
+		6316E8A3256FF09D00D7F686 /* SelectedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedCollectionViewCell.xib; sourceTree = "<group>"; };
+		6316E8BD256FF3A000D7F686 /* SiteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteTableViewCell.h; sourceTree = "<group>"; };
+		6316E8BE256FF3A000D7F686 /* SiteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteTableViewCell.m; sourceTree = "<group>"; };
+		6316E8BF256FF3A000D7F686 /* SiteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SiteTableViewCell.xib; sourceTree = "<group>"; };
+		6316E8C5256FF76200D7F686 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		6316E8C92570DB2E00D7F686 /* content.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = content.geojson; sourceTree = "<group>"; };
+		6316E8DA2571553F00D7F686 /* SiteChooseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SiteChooseViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6316E835256FE93900D7F686 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6316E850256FE93B00D7F686 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6316E85B256FE93B00D7F686 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6316E82F256FE93900D7F686 = {
+			isa = PBXGroup;
+			children = (
+				6316E83A256FE93900D7F686 /* VHSliderTableView */,
+				6316E856256FE93B00D7F686 /* VHSliderTableViewTests */,
+				6316E861256FE93B00D7F686 /* VHSliderTableViewUITests */,
+				6316E839256FE93900D7F686 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6316E839256FE93900D7F686 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6316E838256FE93900D7F686 /* VHSliderTableView.app */,
+				6316E853256FE93B00D7F686 /* VHSliderTableViewTests.xctest */,
+				6316E85E256FE93B00D7F686 /* VHSliderTableViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6316E83A256FE93900D7F686 /* VHSliderTableView */ = {
+			isa = PBXGroup;
+			children = (
+				6316E83B256FE93900D7F686 /* AppDelegate.h */,
+				6316E83C256FE93900D7F686 /* AppDelegate.m */,
+				6316E891256FEE9100D7F686 /* SiteSingle.h */,
+				6316E890256FEE9100D7F686 /* SiteSingle.m */,
+				6316E889256FEE3F00D7F686 /* SiteChooseViewController.h */,
+				6316E888256FEE3F00D7F686 /* SiteChooseViewController.m */,
+				6316E8DA2571553F00D7F686 /* SiteChooseViewController.xib */,
+				6316E89B256FF06100D7F686 /* SiteCollectionViewCell.h */,
+				6316E89C256FF06100D7F686 /* SiteCollectionViewCell.m */,
+				6316E8A1256FF09D00D7F686 /* SelectedCollectionViewCell.h */,
+				6316E8A2256FF09D00D7F686 /* SelectedCollectionViewCell.m */,
+				6316E8A3256FF09D00D7F686 /* SelectedCollectionViewCell.xib */,
+				6316E8BD256FF3A000D7F686 /* SiteTableViewCell.h */,
+				6316E8BE256FF3A000D7F686 /* SiteTableViewCell.m */,
+				6316E8C5256FF76200D7F686 /* Define.h */,
+				6316E8BF256FF3A000D7F686 /* SiteTableViewCell.xib */,
+				6316E847256FE93A00D7F686 /* Assets.xcassets */,
+				6316E849256FE93A00D7F686 /* LaunchScreen.storyboard */,
+				6316E84C256FE93A00D7F686 /* Info.plist */,
+				6316E84D256FE93A00D7F686 /* main.m */,
+				6316E8C92570DB2E00D7F686 /* content.geojson */,
+			);
+			path = VHSliderTableView;
+			sourceTree = "<group>";
+		};
+		6316E856256FE93B00D7F686 /* VHSliderTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				6316E857256FE93B00D7F686 /* VHSliderTableViewTests.m */,
+				6316E859256FE93B00D7F686 /* Info.plist */,
+			);
+			path = VHSliderTableViewTests;
+			sourceTree = "<group>";
+		};
+		6316E861256FE93B00D7F686 /* VHSliderTableViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6316E862256FE93B00D7F686 /* VHSliderTableViewUITests.m */,
+				6316E864256FE93B00D7F686 /* Info.plist */,
+			);
+			path = VHSliderTableViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6316E837256FE93900D7F686 /* VHSliderTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6316E867256FE93B00D7F686 /* Build configuration list for PBXNativeTarget "VHSliderTableView" */;
+			buildPhases = (
+				6316E834256FE93900D7F686 /* Sources */,
+				6316E835256FE93900D7F686 /* Frameworks */,
+				6316E836256FE93900D7F686 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VHSliderTableView;
+			productName = VHSliderTableView;
+			productReference = 6316E838256FE93900D7F686 /* VHSliderTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6316E852256FE93B00D7F686 /* VHSliderTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6316E86A256FE93B00D7F686 /* Build configuration list for PBXNativeTarget "VHSliderTableViewTests" */;
+			buildPhases = (
+				6316E84F256FE93B00D7F686 /* Sources */,
+				6316E850256FE93B00D7F686 /* Frameworks */,
+				6316E851256FE93B00D7F686 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6316E855256FE93B00D7F686 /* PBXTargetDependency */,
+			);
+			name = VHSliderTableViewTests;
+			productName = VHSliderTableViewTests;
+			productReference = 6316E853256FE93B00D7F686 /* VHSliderTableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6316E85D256FE93B00D7F686 /* VHSliderTableViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6316E86D256FE93B00D7F686 /* Build configuration list for PBXNativeTarget "VHSliderTableViewUITests" */;
+			buildPhases = (
+				6316E85A256FE93B00D7F686 /* Sources */,
+				6316E85B256FE93B00D7F686 /* Frameworks */,
+				6316E85C256FE93B00D7F686 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6316E860256FE93B00D7F686 /* PBXTargetDependency */,
+			);
+			name = VHSliderTableViewUITests;
+			productName = VHSliderTableViewUITests;
+			productReference = 6316E85E256FE93B00D7F686 /* VHSliderTableViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6316E830256FE93900D7F686 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					6316E837256FE93900D7F686 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					6316E852256FE93B00D7F686 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 6316E837256FE93900D7F686;
+					};
+					6316E85D256FE93B00D7F686 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 6316E837256FE93900D7F686;
+					};
+				};
+			};
+			buildConfigurationList = 6316E833256FE93900D7F686 /* Build configuration list for PBXProject "VHSliderTableView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6316E82F256FE93900D7F686;
+			productRefGroup = 6316E839256FE93900D7F686 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6316E837256FE93900D7F686 /* VHSliderTableView */,
+				6316E852256FE93B00D7F686 /* VHSliderTableViewTests */,
+				6316E85D256FE93B00D7F686 /* VHSliderTableViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6316E836256FE93900D7F686 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6316E8DB2571553F00D7F686 /* SiteChooseViewController.xib in Resources */,
+				6316E8A5256FF09D00D7F686 /* SelectedCollectionViewCell.xib in Resources */,
+				6316E8C1256FF3A000D7F686 /* SiteTableViewCell.xib in Resources */,
+				6316E84B256FE93A00D7F686 /* LaunchScreen.storyboard in Resources */,
+				6316E848256FE93A00D7F686 /* Assets.xcassets in Resources */,
+				6316E8CA2570DB2E00D7F686 /* content.geojson in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6316E851256FE93B00D7F686 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6316E85C256FE93B00D7F686 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6316E834256FE93900D7F686 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6316E83D256FE93900D7F686 /* AppDelegate.m in Sources */,
+				6316E84E256FE93A00D7F686 /* main.m in Sources */,
+				6316E892256FEE9100D7F686 /* SiteSingle.m in Sources */,
+				6316E89D256FF06100D7F686 /* SiteCollectionViewCell.m in Sources */,
+				6316E88B256FEE3F00D7F686 /* SiteChooseViewController.m in Sources */,
+				6316E8C0256FF3A000D7F686 /* SiteTableViewCell.m in Sources */,
+				6316E8A4256FF09D00D7F686 /* SelectedCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6316E84F256FE93B00D7F686 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6316E858256FE93B00D7F686 /* VHSliderTableViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6316E85A256FE93B00D7F686 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6316E863256FE93B00D7F686 /* VHSliderTableViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6316E855256FE93B00D7F686 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6316E837256FE93900D7F686 /* VHSliderTableView */;
+			targetProxy = 6316E854256FE93B00D7F686 /* PBXContainerItemProxy */;
+		};
+		6316E860256FE93B00D7F686 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6316E837256FE93900D7F686 /* VHSliderTableView */;
+			targetProxy = 6316E85F256FE93B00D7F686 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6316E849256FE93A00D7F686 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6316E84A256FE93A00D7F686 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6316E865256FE93B00D7F686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6316E866256FE93B00D7F686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6316E868256FE93B00D7F686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VHSliderTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LYL.VHSliderTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6316E869256FE93B00D7F686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VHSliderTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LYL.VHSliderTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6316E86B256FE93B00D7F686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VHSliderTableViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LYL.VHSliderTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VHSliderTableView.app/VHSliderTableView";
+			};
+			name = Debug;
+		};
+		6316E86C256FE93B00D7F686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VHSliderTableViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LYL.VHSliderTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VHSliderTableView.app/VHSliderTableView";
+			};
+			name = Release;
+		};
+		6316E86E256FE93B00D7F686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VHSliderTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LYL.VHSliderTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VHSliderTableView;
+			};
+			name = Debug;
+		};
+		6316E86F256FE93B00D7F686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VHSliderTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LYL.VHSliderTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VHSliderTableView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6316E833256FE93900D7F686 /* Build configuration list for PBXProject "VHSliderTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6316E865256FE93B00D7F686 /* Debug */,
+				6316E866256FE93B00D7F686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6316E867256FE93B00D7F686 /* Build configuration list for PBXNativeTarget "VHSliderTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6316E868256FE93B00D7F686 /* Debug */,
+				6316E869256FE93B00D7F686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6316E86A256FE93B00D7F686 /* Build configuration list for PBXNativeTarget "VHSliderTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6316E86B256FE93B00D7F686 /* Debug */,
+				6316E86C256FE93B00D7F686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6316E86D256FE93B00D7F686 /* Build configuration list for PBXNativeTarget "VHSliderTableViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6316E86E256FE93B00D7F686 /* Debug */,
+				6316E86F256FE93B00D7F686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6316E830256FE93900D7F686 /* Project object */;
+}
