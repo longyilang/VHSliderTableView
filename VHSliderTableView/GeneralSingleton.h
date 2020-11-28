@@ -10,14 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SiteSingle : NSObject
+@interface GeneralSingleton : NSObject
 
 @property (nonatomic, strong) NSMutableArray *viewArray;
-@property (nonatomic, strong) NSMutableDictionary *siteDic;
-@property (nonatomic, strong) NSString *sellerNameStr;
-@property (nonatomic, strong) NSString *siteNameStr;
 
-+(SiteSingle *)shareSingleton;
++(GeneralSingleton *)default;
+
+- (NSMutableArray *)weekCalendar;
 
 - (NSString *)getTimeStringWithDate:(NSDate *)date;
 

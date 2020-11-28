@@ -7,7 +7,7 @@
 
 #import "AppDelegate.h"
 
-#import "SiteChooseViewController.h"
+#import "SliderViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +20,7 @@
     // Override point for customization after application launch.
     _window = [[UIWindow alloc]initWithFrame: [UIScreen mainScreen].bounds];
     
-    SiteChooseViewController *vc = [[SiteChooseViewController alloc]initWithNibName:@"SiteChooseViewController" bundle:nil];
+    SliderViewController *vc = [[SliderViewController alloc]initWithNibName:@"SliderViewController" bundle:nil];
 
     self.window.rootViewController = vc;
     

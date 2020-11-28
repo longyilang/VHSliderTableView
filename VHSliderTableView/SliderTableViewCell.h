@@ -12,10 +12,12 @@ typedef void (^ActivityEnterBlock)(NSDictionary * _Nonnull);
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SiteTableViewCell : UITableViewCell<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface SliderTableViewCell : UITableViewCell<UICollectionViewDelegate,UICollectionViewDataSource>
+
 @property (nonatomic, strong) UILabel *titleLabel;
 
 @property (nonatomic, strong) ActivityEnterBlock activityEnterCompletion;
+
 - (void)refreshUI:(NSMutableArray *)dataArray;
 
 @end

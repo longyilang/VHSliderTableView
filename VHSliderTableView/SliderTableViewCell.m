@@ -6,21 +6,21 @@
 //  Copyright © 2020 龙一郎. All rights reserved.
 //
 
-#import "SiteTableViewCell.h"
+#import "SliderTableViewCell.h"
 
-#import "SiteCollectionViewCell.h"
+#import "SliderCollectionViewCell.h"
 
-#import "SiteSingle.h"
+#import "GeneralSingleton.h"
 
 #import "Define.h"
 
-@interface SiteTableViewCell ()
+@interface SliderTableViewCell ()
 @property (nonatomic, strong) UIView *line;
 @property (nonatomic, strong) UICollectionView *priceCollectionView;
 @property (nonatomic, strong) NSMutableArray *dataArray;
 @end
 
-@implementation SiteTableViewCell
+@implementation SliderTableViewCell
 
 - (void)dealloc {
     //NSLog(@"Release--->ArticleTableViewCell");
@@ -43,13 +43,13 @@
     flow.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.priceCollectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flow];
     [self.contentView addSubview:self.priceCollectionView];
-    [self.priceCollectionView registerClass:[SiteCollectionViewCell class] forCellWithReuseIdentifier:@"cellReuse"];
+    [self.priceCollectionView registerClass:[SliderCollectionViewCell class] forCellWithReuseIdentifier:@"cellReuse"];
     self.priceCollectionView.backgroundColor = [UIColor whiteColor];
     self.priceCollectionView.bounces = NO;
     self.priceCollectionView.showsHorizontalScrollIndicator = NO;
     self.priceCollectionView.delegate = self;
     self.priceCollectionView.dataSource = self;
-    [[SiteSingle shareSingleton].viewArray addObject:self.priceCollectionView];
+    [[GeneralSingleton default].viewArray addObject:self.priceCollectionView];
 }
 -(void)layoutSubviews{
     [super layoutSubviews];
@@ -61,7 +61,7 @@
     return self.dataArray.count;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    SiteCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellReuse" forIndexPath:indexPath];
+    SliderCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellReuse" forIndexPath:indexPath];
     NSDictionary *dic = self.dataArray[indexPath.row];
     if (dic.allKeys.count == 0) {
         cell.titleLabel.text = nil;
@@ -77,15 +77,15 @@
     }else{
         cell.titleLabel.text = [NSString stringWithFormat:@"¥ %@",dic[@"configPriceYuan"]];
         cell.backgroundColor = [UIColor whiteColor];
-        NSString *keyStr = dic[@"id"];
-        NSString *valueStr = [[SiteSingle shareSingleton].siteDic valueForKey:keyStr];
-        if ([valueStr isEqualToString:@"1"]) {
-            cell.backgroundColor = UIColorFromRGB(0xEE605A);
-            cell.titleLabel.textColor = [UIColor whiteColor];
-        }else{
-            cell.backgroundColor = [UIColor whiteColor];
-            cell.titleLabel.textColor = [UIColor blackColor];
-        }
+//        NSString *keyStr = dic[@"id"];
+        //NSString *valueStr = [[SiteSingle shareSingleton].siteDic valueForKey:keyStr];
+//        if ([valueStr isEqualToString:@"1"]) {
+//            cell.backgroundColor = UIColorFromRGB(0xEE605A);
+//            cell.titleLabel.textColor = [UIColor whiteColor];
+//        }else{
+//            cell.backgroundColor = [UIColor whiteColor];
+//            cell.titleLabel.textColor = [UIColor blackColor];
+//        }
     }
     return cell;
 }
@@ -99,23 +99,23 @@
     if (amount <= 0) {
         return;
     }else{
-        NSString *keyStr = dic[@"id"];
-        NSString *valueStr = [[SiteSingle shareSingleton].siteDic valueForKey:keyStr];
-        
-        SiteCollectionViewCell *cell = (SiteCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
-        
-        if ([valueStr isEqualToString:@"1"]) {
-            [[SiteSingle shareSingleton].siteDic setValue:@"0" forKey:keyStr];
-            cell.backgroundColor = [UIColor whiteColor];
-            cell.titleLabel.textColor = [UIColor blackColor];
-        }else{
-            [[SiteSingle shareSingleton].siteDic setValue:@"1" forKey:keyStr];
-            cell.backgroundColor = UIColorFromRGB(0xEE605A);
-            cell.titleLabel.textColor = [UIColor whiteColor];
-        }
-        if (self.activityEnterCompletion) {
-            self.activityEnterCompletion(dic);
-        }
+//        NSString *keyStr = dic[@"id"];
+//        NSString *valueStr = [[SiteSingle shareSingleton].siteDic valueForKey:keyStr];
+//        
+//        SiteCollectionViewCell *cell = (SiteCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+//        
+//        if ([valueStr isEqualToString:@"1"]) {
+//            [[SiteSingle shareSingleton].siteDic setValue:@"0" forKey:keyStr];
+//            cell.backgroundColor = [UIColor whiteColor];
+//            cell.titleLabel.textColor = [UIColor blackColor];
+//        }else{
+//            [[SiteSingle shareSingleton].siteDic setValue:@"1" forKey:keyStr];
+//            cell.backgroundColor = UIColorFromRGB(0xEE605A);
+//            cell.titleLabel.textColor = [UIColor whiteColor];
+//        }
+//        if (self.activityEnterCompletion) {
+//            self.activityEnterCompletion(dic);
+//        }
     }
 }
 
@@ -127,7 +127,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     if (scrollView == self.priceCollectionView) {
-        for (UICollectionView *view in [SiteSingle shareSingleton].viewArray) {
+        for (UICollectionView *view in [GeneralSingleton default].viewArray) {
             view.contentOffset = scrollView.contentOffset;
         }
     }

@@ -10,9 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SiteChooseViewController : UIViewController
-@property (nonatomic, strong) NSString *goodsIdStr;
-@property (nonatomic, assign) NSInteger timeIndex;
+@interface SliderViewController : UIViewController
+
 
 @end
 

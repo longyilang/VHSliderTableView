@@ -13,15 +13,14 @@
 		6316E84E256FE93A00D7F686 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E84D256FE93A00D7F686 /* main.m */; };
 		6316E858256FE93B00D7F686 /* VHSliderTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E857256FE93B00D7F686 /* VHSliderTableViewTests.m */; };
 		6316E863256FE93B00D7F686 /* VHSliderTableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E862256FE93B00D7F686 /* VHSliderTableViewUITests.m */; };
-		6316E88B256FEE3F00D7F686 /* SiteChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E888256FEE3F00D7F686 /* SiteChooseViewController.m */; };
-		6316E892256FEE9100D7F686 /* SiteSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E890256FEE9100D7F686 /* SiteSingle.m */; };
-		6316E89D256FF06100D7F686 /* SiteCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E89C256FF06100D7F686 /* SiteCollectionViewCell.m */; };
-		6316E8A4256FF09D00D7F686 /* SelectedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E8A2256FF09D00D7F686 /* SelectedCollectionViewCell.m */; };
-		6316E8A5256FF09D00D7F686 /* SelectedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6316E8A3256FF09D00D7F686 /* SelectedCollectionViewCell.xib */; };
-		6316E8C0256FF3A000D7F686 /* SiteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E8BE256FF3A000D7F686 /* SiteTableViewCell.m */; };
-		6316E8C1256FF3A000D7F686 /* SiteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6316E8BF256FF3A000D7F686 /* SiteTableViewCell.xib */; };
+		6316E88B256FEE3F00D7F686 /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E888256FEE3F00D7F686 /* SliderViewController.m */; };
+		6316E892256FEE9100D7F686 /* GeneralSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E890256FEE9100D7F686 /* GeneralSingleton.m */; };
+		6316E89D256FF06100D7F686 /* SliderCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E89C256FF06100D7F686 /* SliderCollectionViewCell.m */; };
+		6316E8C0256FF3A000D7F686 /* SliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E8BE256FF3A000D7F686 /* SliderTableViewCell.m */; };
+		6316E8C1256FF3A000D7F686 /* SliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6316E8BF256FF3A000D7F686 /* SliderTableViewCell.xib */; };
 		6316E8CA2570DB2E00D7F686 /* content.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 6316E8C92570DB2E00D7F686 /* content.geojson */; };
-		6316E8DB2571553F00D7F686 /* SiteChooseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6316E8DA2571553F00D7F686 /* SiteChooseViewController.xib */; };
+		6316E8DB2571553F00D7F686 /* SliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6316E8DA2571553F00D7F686 /* SliderViewController.xib */; };
+		6316E8E4257237B900D7F686 /* SliderHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6316E8E3257237B900D7F686 /* SliderHeadView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,21 +54,20 @@
 		6316E85E256FE93B00D7F686 /* VHSliderTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VHSliderTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6316E862256FE93B00D7F686 /* VHSliderTableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VHSliderTableViewUITests.m; sourceTree = "<group>"; };
 		6316E864256FE93B00D7F686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6316E888256FEE3F00D7F686 /* SiteChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteChooseViewController.m; sourceTree = "<group>"; };
-		6316E889256FEE3F00D7F686 /* SiteChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteChooseViewController.h; sourceTree = "<group>"; };
-		6316E890256FEE9100D7F686 /* SiteSingle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteSingle.m; sourceTree = "<group>"; };
-		6316E891256FEE9100D7F686 /* SiteSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteSingle.h; sourceTree = "<group>"; };
-		6316E89B256FF06100D7F686 /* SiteCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteCollectionViewCell.h; sourceTree = "<group>"; };
-		6316E89C256FF06100D7F686 /* SiteCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteCollectionViewCell.m; sourceTree = "<group>"; };
-		6316E8A1256FF09D00D7F686 /* SelectedCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedCollectionViewCell.h; sourceTree = "<group>"; };
-		6316E8A2256FF09D00D7F686 /* SelectedCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedCollectionViewCell.m; sourceTree = "<group>"; };
-		6316E8A3256FF09D00D7F686 /* SelectedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedCollectionViewCell.xib; sourceTree = "<group>"; };
-		6316E8BD256FF3A000D7F686 /* SiteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteTableViewCell.h; sourceTree = "<group>"; };
-		6316E8BE256FF3A000D7F686 /* SiteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteTableViewCell.m; sourceTree = "<group>"; };
-		6316E8BF256FF3A000D7F686 /* SiteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SiteTableViewCell.xib; sourceTree = "<group>"; };
+		6316E888256FEE3F00D7F686 /* SliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
+		6316E889256FEE3F00D7F686 /* SliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
+		6316E890256FEE9100D7F686 /* GeneralSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralSingleton.m; sourceTree = "<group>"; };
+		6316E891256FEE9100D7F686 /* GeneralSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralSingleton.h; sourceTree = "<group>"; };
+		6316E89B256FF06100D7F686 /* SliderCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderCollectionViewCell.h; sourceTree = "<group>"; };
+		6316E89C256FF06100D7F686 /* SliderCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderCollectionViewCell.m; sourceTree = "<group>"; };
+		6316E8BD256FF3A000D7F686 /* SliderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderTableViewCell.h; sourceTree = "<group>"; };
+		6316E8BE256FF3A000D7F686 /* SliderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderTableViewCell.m; sourceTree = "<group>"; };
+		6316E8BF256FF3A000D7F686 /* SliderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SliderTableViewCell.xib; sourceTree = "<group>"; };
 		6316E8C5256FF76200D7F686 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		6316E8C92570DB2E00D7F686 /* content.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = content.geojson; sourceTree = "<group>"; };
-		6316E8DA2571553F00D7F686 /* SiteChooseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SiteChooseViewController.xib; sourceTree = "<group>"; };
+		6316E8DA2571553F00D7F686 /* SliderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SliderViewController.xib; sourceTree = "<group>"; };
+		6316E8E2257237B900D7F686 /* SliderHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SliderHeadView.h; sourceTree = "<group>"; };
+		6316E8E3257237B900D7F686 /* SliderHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderHeadView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,20 +120,19 @@
 			children = (
 				6316E83B256FE93900D7F686 /* AppDelegate.h */,
 				6316E83C256FE93900D7F686 /* AppDelegate.m */,
-				6316E891256FEE9100D7F686 /* SiteSingle.h */,
-				6316E890256FEE9100D7F686 /* SiteSingle.m */,
-				6316E889256FEE3F00D7F686 /* SiteChooseViewController.h */,
-				6316E888256FEE3F00D7F686 /* SiteChooseViewController.m */,
-				6316E8DA2571553F00D7F686 /* SiteChooseViewController.xib */,
-				6316E89B256FF06100D7F686 /* SiteCollectionViewCell.h */,
-				6316E89C256FF06100D7F686 /* SiteCollectionViewCell.m */,
-				6316E8A1256FF09D00D7F686 /* SelectedCollectionViewCell.h */,
-				6316E8A2256FF09D00D7F686 /* SelectedCollectionViewCell.m */,
-				6316E8A3256FF09D00D7F686 /* SelectedCollectionViewCell.xib */,
-				6316E8BD256FF3A000D7F686 /* SiteTableViewCell.h */,
-				6316E8BE256FF3A000D7F686 /* SiteTableViewCell.m */,
 				6316E8C5256FF76200D7F686 /* Define.h */,
-				6316E8BF256FF3A000D7F686 /* SiteTableViewCell.xib */,
+				6316E891256FEE9100D7F686 /* GeneralSingleton.h */,
+				6316E890256FEE9100D7F686 /* GeneralSingleton.m */,
+				6316E889256FEE3F00D7F686 /* SliderViewController.h */,
+				6316E888256FEE3F00D7F686 /* SliderViewController.m */,
+				6316E8DA2571553F00D7F686 /* SliderViewController.xib */,
+				6316E8E2257237B900D7F686 /* SliderHeadView.h */,
+				6316E8E3257237B900D7F686 /* SliderHeadView.m */,
+				6316E8BD256FF3A000D7F686 /* SliderTableViewCell.h */,
+				6316E8BE256FF3A000D7F686 /* SliderTableViewCell.m */,
+				6316E8BF256FF3A000D7F686 /* SliderTableViewCell.xib */,
+				6316E89B256FF06100D7F686 /* SliderCollectionViewCell.h */,
+				6316E89C256FF06100D7F686 /* SliderCollectionViewCell.m */,
 				6316E847256FE93A00D7F686 /* Assets.xcassets */,
 				6316E849256FE93A00D7F686 /* LaunchScreen.storyboard */,
 				6316E84C256FE93A00D7F686 /* Info.plist */,
@@ -265,9 +262,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6316E8DB2571553F00D7F686 /* SiteChooseViewController.xib in Resources */,
-				6316E8A5256FF09D00D7F686 /* SelectedCollectionViewCell.xib in Resources */,
-				6316E8C1256FF3A000D7F686 /* SiteTableViewCell.xib in Resources */,
+				6316E8DB2571553F00D7F686 /* SliderViewController.xib in Resources */,
+				6316E8C1256FF3A000D7F686 /* SliderTableViewCell.xib in Resources */,
 				6316E84B256FE93A00D7F686 /* LaunchScreen.storyboard in Resources */,
 				6316E848256FE93A00D7F686 /* Assets.xcassets in Resources */,
 				6316E8CA2570DB2E00D7F686 /* content.geojson in Resources */,
@@ -297,11 +293,11 @@
 			files = (
 				6316E83D256FE93900D7F686 /* AppDelegate.m in Sources */,
 				6316E84E256FE93A00D7F686 /* main.m in Sources */,
-				6316E892256FEE9100D7F686 /* SiteSingle.m in Sources */,
-				6316E89D256FF06100D7F686 /* SiteCollectionViewCell.m in Sources */,
-				6316E88B256FEE3F00D7F686 /* SiteChooseViewController.m in Sources */,
-				6316E8C0256FF3A000D7F686 /* SiteTableViewCell.m in Sources */,
-				6316E8A4256FF09D00D7F686 /* SelectedCollectionViewCell.m in Sources */,
+				6316E892256FEE9100D7F686 /* GeneralSingleton.m in Sources */,
+				6316E8E4257237B900D7F686 /* SliderHeadView.m in Sources */,
+				6316E89D256FF06100D7F686 /* SliderCollectionViewCell.m in Sources */,
+				6316E88B256FEE3F00D7F686 /* SliderViewController.m in Sources */,
+				6316E8C0256FF3A000D7F686 /* SliderTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
